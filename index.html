@@ -1,3 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Verificación</title>
+    <link rel="stylesheet" href="style.css"> <!-- Enlace al CSS -->
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>🧮 Calculadora de Verificación</h1>
+
+        <label for="inputNumero">Ingrese un número y presione Enter:</label>
+        <input type="number" id="inputNumero" placeholder="Ejemplo: 10.5">
+        <button onclick="finalizarCaptura()">Calcular Suma</button>
+
+        <h2>Resultado:</h2>
+        <span id="sumaTotal">0</span>
+
+        <h2>Lista de números ingresados:</h2>
+        <ul id="listaNumeros"></ul>
+
+        <h2>Verificación de Números</h2>
+        <label for="inputVerificacion">Ingrese los números nuevamente:</label>
+        <input type="number" id="inputVerificacion" placeholder="Ejemplo: 10.5">
+        <button onclick="verificarNumeros()">Verificar</button>
+
+        <h2>Lista de números verificados:</h2>
+        <ul id="listaVerificacion"></ul>
+
+        <h2>Resultado de la comparación:</h2>
+        <div id="resultado"></div>
 
         <h2>Restablecer Operación</h2>
         <button onclick="reiniciarCalculadora()">🔄 Restablecer</button>
